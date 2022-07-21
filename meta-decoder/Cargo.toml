@@ -1,0 +1,20 @@
+[package]
+name = "metaplex-meta-decoder"
+version = "0.1.0"
+description = "Metaplex Program Library Token"
+license = "Apache-2.0"
+edition = "2021"
+
+
+[dependencies]
+num-derive = "~0.3"
+arrayref = "~0.3.6"
+shank = { version = "~0.0.2" }
+thiserror = "1.0"
+solana-program = {path="../../solana/sdk/program"}
+
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[workspace]
